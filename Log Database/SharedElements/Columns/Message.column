@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257DA90055E739'>
+<noteinfo noteid='3ce' unid='A7225960C30FADFAC1257E740051C545' sequence='3'>
+<created><datetime dst='true'>20150630T165309,17+02</datetime></created>
+<modified><datetime dst='true'>20150702T103417,70+02</datetime></modified>
+<revised><datetime dst='true'>20150702T103417,69+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150702T103417,69+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150630T165313,64+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$SourceSeqTime'><datetime dst='true'>20150630T165313,64+02</datetime></item>
+<item name='$SourceSequence'><text>00000001</text></item>
+<item name='$SourceURL'><textlist><text>Notes:///C1257DA90055E739//A7225960C30FADFAC1257E740051C545</text><text
+>Notes:///C1257DA90055E739:C1257DAC00518D8B:79457B42//3CE</text></textlist></item>
+<item name='$ClassName'><text>View</text></item>
+<item name='$SourceDbPath'><text>CN=demo90/O=demo!!Groupwave\toolkit\openlog.ntf</text></item>
+<item name='$CacheDocVersion'><number>1</number></item>
+<item name='$TITLE' sign='true'><text>Message</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+ogACAHYAAgAkNwUADABMb2dFdmVudFR5cGViAQEABQBFUlJPUgAKAgUADwBMb2dFcnJvck1lc3Nh
+Z2UAAQAAAAsCHAKvADAAGgAFAA8ATG9nRXJyb3JNZXNzYWdlAK4AFgAFAAoATG9nTWVzc2FnZa4A
+BAC1AwMABQAeABkAAwACAAkABAAkNyRDb25mbGljdCRSRUYABAAEAAAACABmAAMA
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+BgAAAABE
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQABAAEACAAAAFZDAAACAAcAlAAAAD0BBQAACAAAAAAAAAAAAAICAAAAJDdNZXNzYWdllAACAHYA
+AgAkNwUADABMb2dFdmVudFR5cGViAQEABQBFUlJPUgAKAgUADwBMb2dFcnJvck1lc3NhZ2UAAQAA
+AAsCHAKvADAAGgAFAA8ATG9nRXJyb3JNZXNzYWdlAK4AFgAFAAoATG9nTWVzc2FnZa4ABAC1AwMA
+BwAcABUACTZTN1M4UzlTMTBTMTFTMTNTMTVTACYAAQAAAAEBAAkBAAAKAQEOCgAAAQCtKwEAAQAB
+AAAAAAAAAAAAV0MGAb8IAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAEIA
+AAAAAAEA////AAUA////AAEAAAAAAAAAAAAAAAAAAQD///8AAQD///8AAAABAAAAAAABAAAAAAAB
+AAAAAAAAAAgAAAAAAAEA
+</rawitemdata></item>
+<item name='$Fonts' sign='true'><textlist><text>5</text><text>38</text><text
+>Verdana</text><text>6</text><text>38</text><text>Verdana</text></textlist></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>^Y</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

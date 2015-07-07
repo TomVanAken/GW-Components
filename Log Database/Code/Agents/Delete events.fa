@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='filter' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257DA90055E739'>
+<noteinfo noteid='192' unid='3E79C84C04582D62C1257CE000312FBB' sequence='6'>
+<created><datetime dst='true'>20140522T105714,83+02</datetime></created>
+<modified><datetime>20150309T112111,01+01</datetime></modified>
+<revised><datetime>20150309T112111,00+01</datetime></revised>
+<lastaccessed><datetime>20150309T112111,00+01</datetime></lastaccessed>
+<addedtofile><datetime>20141212T155047,23+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$POID'><datetime dst='true'>20110705T150429,98+02</datetime></item>
+<item name='$Class'><text>[TMPL] OpenLog 1.00.00</text></item>
+<item name='$TITLE' sign='true'><text>Delete events</text></item>
+<item name='$AssistType' sign='true'><number>65412</number></item>
+<item name='$AssistLastRun' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='$AssistDocCount' sign='true'><number>0</number></item>
+<item name='$FlagsExt' sign='true'><text/></item>
+<item name='$AssistFlags' sign='true'><text>Es</text></item>
+<item name='$MachineName' sign='true'><text>*</text></item>
+<item name='$AssistTrigger'><text>1</text></item>
+<item name='$AssistInfo' sign='true'>
+<rawitemdata type='11'>
+AQABAAEAAQA8AIDuNgBAYl0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</rawitemdata></item>
+<item name='$AssistQuery' sign='true'>
+<rawitemdata type='f'>
+gQYAAAAA
+</rawitemdata></item>
+<item name='$AssistAction' sign='true'>
+<rawitemdata type='10'>
+gQKE/+gBAAAAAN4B3gEKAAQAAQAeAAQAVHlwZQUADABMb2dFdmVudFR5cGViAQMABwAMAAUACTFT
+MlMAAQCEAAwATnVtYmVyT2ZEYXlzBQAMAExvZ0V2ZW50VHlwZQEABQBFUlJPUgAKAq8AUgAQAAAA
+AAAAAAAAHECuAEIABQAMAExvZ0V2ZW50VHlwZQEABQBERUJVRwAKAq8AIgAQAAAAAAAAAAAAAACu
+ABIAAAAAAAAAAAAIQK4ABAC1BQMABwAOAAcACTBSMVMyUwABAFYADQBOdW1iZXJPZkhvdXJzAAUA
+DABMb2dFdmVudFR5cGUBAAUAREVCVUcACgKvACIAEAAAAAAAAAAAABBArgASAAAAAAAAAAAAAACu
+AAQAtQMDAAcADgAHAAkwUjFTMlMACACGAAUABABGb3JtAQAIAExvZ0V2ZW50CgKkAAAAAAAAAAAA
+AAAAAAAAAAAAAAAABQAMAE51bWJlck9mRGF5cwUADQBOdW1iZXJPZkhvdXJzAAAAAAAAAAAAAAAA
+AAAAAAAAAAAATQcsAA4CHAKvABQACAC9AK4ADAD7ADgBrgAEALUDAwAHAB4AFwAJMFIzUzRTNVM2
+UzEwUzIyUzIzUzI4UwAAAAgAZgADAAcADAAGAAkwUkwxUw==
+</rawitemdata></item>
+<item name='$AssistAction_Ex' sign='true'>
+<rawitemdata type='14'>
+gQI=
+</rawitemdata></item>
+<item name='$Restricted' sign='true'><number>1</number></item>
+<item name='$Flags'><text>f3SP</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$AssistRunInfo' summary='true'>
+<rawitemdata type='3'>
+BgABAAAACABqAwAAAAAAAAUAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAA31BQALN9JcE551UAqX0lwQAAAAAAAAAAAAAAAAAAAAAAAAAAv3eGozWo
+d4UpgPPwav65EAirweGIaK/353hPZspMs64cSZ4WHrwFYHqK/CcDbKMEeeSrBNOCOuosV2HB0C3s
+ecLKAVsSI+tkJmstA/5W1sDoIYfmGPDhDBce8BnUf8ZjFlsLDcCi2MwBH9JE7K80ryb4NsvNb0Ca
+YWQapYPs60Nf4mIYa6fBpbebrO+/WUCZCo6ybIiF++g3twAfKsFCYmAc7eyCy4Rfv5jH+3EGFn3F
+E3c0wsgQi0fhxRxKYxCr1ygvicksrjON2Qi0N5Bl0+blsKjHcs6ZLi1CLOk8bBoJ/q34Mjlv2PxF
++6hcy40CRn3RFDmCyBuI/XOr/ZdnTEVFTZQ0zVLAx0TYk2NHnvKljR++NW8UZVj//3UcZ8ORrJoZ
+Zt/g2maMah7BPK9Wu87gOrNZF3j8szAz870aD4C0YSvIp6gbhmN9JaqBQPGgNYGxqBD03ZY99V9d
+WpeDKoxm6O0AO6wWekIQVZgQKee0pxGYekLOJ6qpV17VoC33qSuGgk7qRT3j4zCI4eaTFTlJ+uAN
+gFT9NEQ/CRK4smfImJrfxtsiCj5YURua0/r3DQ+26Y4vHVuTvMryjgAnUbyY+vXUwhVHco77baOH
+kbcJI+zOvZAn7/7wkY3E+OpTSCKK+42iw3ymhvpqKGV0XqezYP0yjjA20X4XKH0DKEsEKqYFQ1mh
++1RTQwmuxky14PrPIViExE9sFVBA1e4jNKCMXzIMRFIzE+3MjL8fd+ZbddGSDe92qG5vFcUmPUax
+aoo/yLHLD2jlCTiS1FtDyjtLlRzX4by6hQNW/ucvsIODDX+e8yhkubXhm8WGUOI2v+ajJ61VDVCt
+3/bunH035iet1zvwi9nQNsjU9fuCior7jpG/i97HWT8JaYfO7aqqMSlCXy+moJhuiuFh9u+O/1wN
+asaJMITR0GK9zn0wq0f1C3zIsm1zriYOmVy2u7sspWjWf9Ke9oMaezwEjuMJZ2bZ9mytlkf+FLGS
+sAboZku5izjUQRHfKt36m4ROaHvUx0GOje9lIVqZXXWJYbRHfOC32j5lfz5AMpR53NXQC204Sf/I
+qie24ZLdvBOdztKskH1XhwTQaaQLFMOALFzY+hbUc/fyTlZnLqmwAafH8TaJT12lqO7GUKmxNNOr
+QA+XR0WB/2/ygpA7d8N24x4aeQCRh/573V1OboN3taU2kRRgR/dcR9Wx/Hb2PRfjLfErrifnAnng
+pUqPE+ZZ5q74MwoQb1NavNOM
+</rawitemdata></item>
+<item name='$AssistVersion'><datetime>20150309T112114,16+01</datetime></item></note>
+

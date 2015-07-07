@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257DA90055E739'>
+<noteinfo noteid='342' unid='87AAD34AA36EE88EC1257DB2004F7DD8' sequence='2'>
+<created><datetime>20141218T152815,60+01</datetime></created>
+<modified><datetime>20150309T112111,57+01</datetime></modified>
+<revised><datetime>20150309T112111,56+01</datetime></revised>
+<lastaccessed><datetime>20150309T112111,56+01</datetime></lastaccessed>
+<addedtofile><datetime>20141218T165434,13+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$TITLE'><text>$DBIcon</text></item>
+<item name='$Flags'><text>34Ci~Q</text></item>
+<item name='$ImagesWide' sign='true'><number>1</number></item>
+<item name='$ImagesHigh' sign='true'><number>1</number></item>
+<item name='$ImagesColorize' sign='true'><number>0</number></item>
+<item name='$FileSize' sign='true'><number>1060</number></item>
+<item name='$ImageData' sign='true'>
+<rawitemdata type='1'>
+mQAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAH0AHAAAAAEAAAAAACQEAAABAAAAAAAAAAAAAAB8
+AC4EAAAkBCQER0lGODlhIAAgAPf/AAAAAACP1AOQ1AaS1QyU1g+W1xeZ2Bqb2Byc2B+d2SCd2Smh
+2y2j3Dan3Tmo3Typ3j+r306x4VW04li241645GK65GW85U/G9FbI9FzK9WLM9WbN9WrP9mzQ9nPC
+53nE6H7G6XHR9nXS9n3U94/O7IbY94vY943Z947a94rZ+JXQ7ZfS7ZvT7p3U7pLc+J3d95zf+aLW
+76TX76Pa8qDf96fa8a7e86Hg+KPh+ajj+a7j+Kzk+rLh9bHk+LPm+rfo+r7i9Ljl+Lzn+bzp+77q
++8Xm9cPp+MHr+8Ps+8ro9s7v/M7w/NLs99nu+NHw/Njz/N70/eHy+uD1/eL2/ez3/Oz4/vH4/PP5
+/fH6/vb7/fr9/vr9//v+//z9/v7+/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8A
+LAAAAAAgACAAAAj+AKlk8fKvoMGDCBMq/KdCAYUYTLQsnDiRRIAAAg48AAEkCkGKIC1eHDlgwQQZ
+Tax8BIlQ5MiXAQpA+FDkSpeVIWHqHGlAgoomOBe63KlTAAEGHpJQHEqUqIWlTaMGqABVKlGqFa1e
+raoVJlahXXV+Vcg07NiEZbuebRnWK9edAxAgSNDAgYMIEiSwCHqwCIgVLVrUsDGDh5EgQYTo0NGD
+xosbJ0ygcIFjBxEkSpxAmVLln5fPXrA8+QGjhAgOGS6oXs36AgYNHUa48LGks0IvW6pAUTIER4oQ
+GjRskJ3jiBMpVT6zTPgZSxUufJdLn069uvXr2LNr3869u/fv4MMCBwQAOw==
+</rawitemdata></item>
+<item name='$MimeType' sign='true'><text>image/gif</text></item>
+<item name='$FileModDT' sign='true'><datetime>20141218T152726,77+01</datetime></item>
+<item name='$ImageNames' sign='true'><text>D:\Users\axeif\Pictures\favicon.gif</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

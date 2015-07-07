@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
+ maintenanceversion='1.0' replicaid='C1257DA90055E739'>
+<noteinfo noteid='126' unid='3471C663DBE7590C85256E33000BB95A' sequence='2'>
+<created><datetime>20040206T210803,46-05</datetime></created>
+<modified><datetime dst='true'>20150702T090541,57+02</datetime></modified>
+<revised><datetime dst='true'>20150702T090541,56+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150702T090541,56+02</datetime></lastaccessed>
+<addedtofile><datetime>20141212T155046,56+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Julian Robichaux/O=nsftools</name><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name
+>CN=Demo Administrator/O=demo</name></updatedby>
+<item name='IconBitmap' summary='true' sign='true'>
+<rawitemdata type='6'>
+AiAgAQAA//////+/CEP/H3tb/g97U/wHW1/4AQhH8AAH/+AAAf/AAAD/gAAAFgAAAHYAAAA0AAAA
+EgAAABYAAAAPAAAADwAAAB8AAAA/AAAAfwAAAP8AAAH/AAAD/wAAAf8AAAD/AAAQfwAAOD8AAHgf
+gAD8D8EB/gfjg/4D98f/A//v/8cAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAACqqg+q8PqvAAAAAADu
+4AAAoAAKAKCgCgAAAAAO4R4AAKAACgCgoKoAAAAA7hER4ACgEAoAoKAAAAAADuERER7goREPqvD6
+oAAAAO4RF9Ee4aEREAAAAAAAAA7hERF97hERERHgAAAAAADuERfRHuERERERHgAAAAAO4RERfe4f
+qq8aERGqoKAK7hEX0R7hGhEaGqrxoACgCuEREX3uERoRGhoRoaoAoKoRF9Ee4REaERoaEaGhEKoK
+ERF97hERGhEaGqrxqqCgChfRHuERER+qrxERERERAAARfe4RERERERERERERHgAA0R7hERfRERER
+EREREeAAAH3uERERfREQ4RERER4AAAAe4REX0RfRH+oBERHgAAAA7hEREX0RfRHqoBEeAAAAAOER
+F9EX0RfRr3oB4AAAAAB+ERF9EX0RfRr3oAAAAAAAF+ERF9EX0RcRr3oAAAAAABF+ERF9EX0RERr3
+oAAAAAARF+ERF9EX0RHgr3oAAAAAERF+ERF9EREeAApwoAAAAOEREeERF9ER4AAKD3oAAAAOEREe
+ERERHgAAAKD3oAAAAOER4OEREeAAAAAKD3oAAAAOHgAOER4AAAAAD6D3oAAAAOAAAOHgAAAAAAD6
+D6AAAAAAAAAOAAAAAAAAAKoAAA==
+</rawitemdata></item>
+<item name='$SoftDeleteExpireHours' sign='true'><number>48</number></item>
+<item name='$Flags'><text>Jz21F47</text></item>
+<item name='$LaunchXPageRunOnServer'><text>0</text></item>
+<item name='$FlagsNoRefresh'><text/></item>
+<item name='$DefaultFrameset'><text>_frsEntrance</text></item>
+<item name='$Daos'><text>0</text></item>
+<item name='$TITLE'><text>[TMPL] OpenLog GW
+#1[TMPL] OpenLog GW</text></item></note>
+

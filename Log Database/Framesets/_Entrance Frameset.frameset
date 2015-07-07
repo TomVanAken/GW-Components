@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257DA90055E739'>
+<noteinfo noteid='33e' unid='96B44131A4D1CF39C1257DB20050EF23' sequence='6'>
+<created><datetime>20141218T154400,99+01</datetime></created>
+<modified><datetime>20150309T112111,79+01</datetime></modified>
+<revised><datetime>20150309T112111,78+01</datetime></revised>
+<lastaccessed><datetime>20150309T112111,78+01</datetime></lastaccessed>
+<addedtofile><datetime>20141218T165434,11+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$TITLE' sign='true'><text>_Entrance Frameset|_frsEntrance</text></item>
+<item name='$WindowTitle' sign='true'><formula>@DbTitle</formula></item>
+<item name='$Comment' sign='true'><text>Basic Configuration Component 1.00 - This frameset is displayed at database launch</text></item>
+<item name='$FrameSet' sign='true'>
+<rawitemdata type='1'>
+7/8YAAIABwAAAAAAAAAAAAAAAAAAAAAA8P8+AEUAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAUAAAAA
+AAIAAQAAAAAAAQAAAAAAAAABACMAAwABAAMAAQDx/zoAEQAAAABAAAECAAEAAQAAAAAABgAAAAAA
+AQAAAAAAAABIZWFkZXIBAP///wABAAAJAQD///8A9v8uAAAAAAADAAcADAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAF9wYWdUb3BGcmFtZfD/PgABAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAFAAAAAAABAAIA
+AAAAAAUAAAAAAAAAAwABAAEA0gADAE8A8P8+AAEAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAUAAAAA
+AAIAAQAAAAAABQAAAAAAAAADAAEAAQAyAAMAAQDx/0UAEQAAAABAAAEDAAEAAQAAAAAACgAAAAcA
+AQAAAAAAAABOYXZpZ2F0aW9uQ29udGVudAEA////AAEAAAoBAAAAAAA/9v82AAAAAAADAAcAFAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAF9wYWdNYWluTWVudUVudHJhbmNl8f89ABEAAAAAQAABAgABAAEA
+AAAAAAkAAAAAAAEAAAAAAAAAQ29weXJpZ2h0AQD///8AAQAACQEA////AD/2/zcAAAAAAAMABwAV
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAX3BhZ0NvcHlyaWdodEVudHJhbmNlP/H/PwARAQAAAEAAAQMA
+AQABAAAAAAAHAAAABAABAAAAAAAAAENvbnRlbnRNYWluAQD///8AAQAACQEA////AD/2/zQAAAAA
+AAMAAgASAAAAAAAAAAAAAAAAAAAAAAAAAAAARXZlbnRzXFNpbXBsZSB2aWV3
+</rawitemdata></item>
+<item name='$Flags'><text>#34CQw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

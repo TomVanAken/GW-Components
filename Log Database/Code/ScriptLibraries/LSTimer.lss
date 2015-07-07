@@ -1,0 +1,196 @@
+'++LotusScript Development Environment:2:5:(Options):0:74
+Option Public
+Option Explicit
+
+%REM
+	 * =======================================================
+	 * <HEADER>
+	 * NAME:	LSTimer script library
+	 * VERSION:	20040214a
+	 * AUTHOR(S):	Julian Robichaux ( http://www.nsftools.com )
+	 * ORIGINAL SOURCE:	The OpenLog database, available as an
+	 * open-source project at http://www.OpenNTF.org
+	 * HISTORY:	none (this is the initial release)
+	 *
+	 * DISCLAIMER:
+	 * This code is provided "as-is", and should be used at your own risk. 
+	 * The authors make no express or implied warranty about anything, 
+	 * and they will not be responsible or liable for any damage caused by 
+	 * the use or misuse of this code or its byproducts. No guarantees are 
+	 * made about anything.
+	 *
+	 * That being said, you can use, modify, and distribute this code in any
+	 * way you want, as long as you keep this header section intact and in
+	 * a prominent place in the code.
+	 * </HEADER>
+	 * =======================================================
+
+The LSTimer class can be used to easily track how long
+your LotusScript processes are taking to run, down to the
+sub-millisecond level. Here's an example:
+
+	Dim t As New LSTimer(True)
+	Sleep(5)
+	Print "That took " & t.elapsedMilliseconds(False) & " milliseconds"
+	
+	Sleep(60)
+	Print t.elapsedTime(True)
+	t.resetTimer()
+	
+	Sleep(2)
+	Print "That took " & t.elapsedSeconds(True) & " seconds"
+	
+	Print t.getStartTime & " - " & t.getEndTime
+
+%END REM
+
+
+
+'++LotusScript Development Environment:2:5:(Forward):0:1
+Declare Class LSTimer
+
+'++LotusScript Development Environment:2:5:(Declarations):0:10
+'** how many milliseconds are in a day
+'** the number of milliseconds in a day (24*60*60*1000)
+Const MILLIS_PER_DAY = 86400000
+
+Class LSTimer
+	'** a simple timer that you can use to see how long your
+	'** LotusScript processes are taking. We're using the
+	'** Timer function to get the number of seconds since
+	'** midnight, which returns a sub-millisecond result
+	Private startTime As Single
+	Private startTimeVar As Variant
+	Private endTime As Single
+	Private endTimeVar As Variant
+	Private running As Integer
+	
+	Sub New (startNow As Integer)
+		'** normally you'll want to instantiate this class
+		'** with a startNow value of True, which means
+		'** the timer should start immediately. If you use
+		'** False, you can always start it later with the
+		'** restartTimer method
+		If startNow Then
+			Call resetTimer()
+		End If
+	End Sub
+	
+	
+	Sub resetTimer ()
+		'** start the timer
+		startTime = Timer
+		startTimeVar = Now
+		running = True
+	End Sub
+	
+	
+	Sub stopTimer ()
+		'** stop the timer
+		endTime = Timer
+		endTimeVar = Now
+		running = False
+	End Sub
+	
+	
+	Property Get isRunning As Integer
+		'** is the timer currently running?
+		isRunning = running
+	End Property
+	
+	
+	Function getStartTime () As Variant
+		'** get the date/time from when we 
+		'** last started the timer as a Variant
+		'** of type Date/Time
+		getStartTime = startTimeVar
+	End Function
+	
+	
+	Function getEndTime () As Variant
+		'** get the date/time from when we 
+		'** last stopped the timer as a Variant
+		'** of type Date/Time
+		getEndTime = endTimeVar
+	End Function
+	
+	
+	Function elapsedMilliseconds (stopNow As Integer) As Double
+		'** how many milliseconds have elapsed since
+		'** the timer was last reset? Using the stopNow
+		'** parameter, you can optionally stop the timer
+		'** if it's currently running
+		On Error Goto processError
+		
+		Dim ntime As Single
+		Dim curday As Variant
+		
+		If stopNow And running Then
+			Call stopTimer()
+		End If
+		
+		If running Then
+			ntime = Timer
+			curday = Today
+		Else
+			ntime = endTime
+			curday = endTimeVar
+		End If
+		
+		If (Fix(curday) = Fix(startTimeVar)) Then
+			elapsedMilliseconds = ntime - startTime
+		Else
+			elapsedMilliseconds = ntime
+			elapsedMilliseconds = elapsedMilliseconds + (MILLIS_PER_DAY - ntime)
+			elapsedMilliseconds = elapsedMilliseconds + (MILLIS_PER_DAY * (Fix(curday) - Fix(startTimeVar) + 1))
+		End If
+		
+		elapsedMilliseconds = elapsedMilliseconds * 1000
+		Exit Function
+		
+processError:
+		elapsedMilliseconds = -1
+		Exit Function
+		
+	End Function
+	
+	
+	Function elapsedSeconds (stopNow As Integer) As Long
+		'** how many seconds have elapsed since
+		'** the timer was last reset?
+		Dim et As Double
+		et = elapsedMilliseconds(stopNow) / (1000)
+		elapsedSeconds = Fix(et)
+	End Function
+	
+	
+	Function elapsedMinutes (stopNow As Integer) As Long
+		'** how many minutes have elapsed since
+		'** the timer was last reset?
+		Dim et As Double
+		et = elapsedMilliseconds(stopNow) / (60000)
+		elapsedMinutes = Fix(et)
+	End Function
+	
+	
+	Function elapsedHours (stopNow As Integer) As Long
+		'** how many hours have elapsed since
+		'** the timer was last reset?
+		Dim et As Double
+		et = elapsedMilliseconds(stopNow) / (3600000)
+		elapsedHours = Fix(et)
+	End Function
+	
+	
+	Function elapsedTime (stopNow As Integer) As String
+		'** get the time elapsed as a string, in the
+		'** format hh:mm:ss
+		Dim et As Double
+		et = elapsedMilliseconds(stopNow)
+		
+		elapsedTime = Format$(et  / 3600000, "00") & ":" & _
+		Format$((et / 60000) Mod 60, "00") & ":" & _
+		Format$((et / 1000) Mod 60, "00")
+	End Function
+	
+End Class

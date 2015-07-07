@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257DA90055E739'>
+<noteinfo noteid='212' unid='CC454D89F5754B84C1257DAC004F52A0' sequence='10'>
+<created><datetime>20141212T152624,96+01</datetime></created>
+<modified><datetime>20150309T112111,77+01</datetime></modified>
+<revised><datetime>20150309T112111,76+01</datetime></revised>
+<lastaccessed><datetime>20150309T112111,76+01</datetime></lastaccessed>
+<addedtofile><datetime>20141212T155047,75+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='OriginalModTime' sign='true'><datetime>20070118T180037,10+01</datetime></item>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$TITLE'><textlist><text>_Entrance Frame - Main Menu</text><text
+>_pagMainMenuEntrance</text></textlist></item>
+<item name='$Comment' sign='true'><text>Basic Configuration Component 1.00 - Left navigation frame for the standard Lotus Notes UI</text></item>
+<item name='$Info' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAAAAAA
+</rawitemdata></item>
+<item name='$WindowTitle' sign='true'><formula>@DbTitle</formula></item>
+<item name='$Flags'><text>C34WQw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$Fonts'>
+<rawitemdata type='1'>
+i/9KAAIABSZBcmlhbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYmVmVyZGFuYQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAA=
+</rawitemdata></item>
+<item name='$$ScriptName' summary='false' sign='true'><text>_pagMainMenuEntrance</text></item>
+<item name='$Body' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAQABAKwEAACrBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJSErAQQAKsEEAAAAAAAAQAAAAQAAACDBAEAhf8MAAUBAAhNZW51gQKC/1oA
+AgAAAAAAAAAAAGMEAABjBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAABAAAAAJSEYwQQAGMEEAAAAAAAAQAAAAQAAACDBAIAhf8IAAYAAAjdBgAArf9x/y4AAAAAAAMA
+FgAMAAAAAAAAAAAAAAAAAAAAAAAAAAAATWFpbk91dGxpbmUArf8YABsACAAAAAwATWFpbk91dGxp
+bmUA6v8+ABsAAJQAANgJ0BEGAAAIAAAAAAAAAAAGAAAIBgAACAAABQD///8AAQBfX18AAAAAAAAA
+AAAAAAAAAADs/xgBAIYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAACQAA
+AAEAAAoBAAAKAQAACgEAAAoBAAAKAQAACgAAAAAAAAAAVAFUAQAAAAAAAAUA////AAUA////AAUA
+////AAUA////AAUA////AAUA////AAUA////AAUA////AAUA////AAUA////AAEAAAAAAAEAAAAA
+AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAF9fXwABAF9f
+XwABAF9fXwABAAAAAAABAAAAAAABAAAAAAAAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAABNYWluIE1l
+bnUArgLeBgAArgCF/wgABgEACA==
+</rawitemdata></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABSZWZXJkYW5hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cIwAAAAEAAQAAAAEAAAAA
+AAAABQAACQgAAgB5/2wAAQDU0MgAAQAAAAAACQAAAAAAAQAAoeAAAwAcAAAAAAAAAAAAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD8/zoAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAP///wAAAAAA
+AAAAAAAAvv8mAAAABQAAAJ0BAAALAAAAAAAAAENhdGVnb3JpX3plBQEATny+/ygAAAAFAAAAnQEA
+AA4AAAAAAAAAX0VkaXQgRG9jdW1lbnQCAAIKvv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9TZW5kIERv
+Y3VtZW50AwADCr7/IgAAAAUAAACdAQAACAAAAAAAAABfRm9yd2FyZAQABAq+/ywAAAAFAAAAnQEA
+ABIAAAAAAAAAX01vdmUgVG8gRm9sZGVyLi4uBQA9fL7/LgAAAAUAAACdAQAAEwAAAAAAAABfUmVt
+b3ZlIEZyb20gRm9sZGVyAAYAPnw=
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwjAAAAAQABAAAAAQAAAAAAAACsAAAJCAACAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29y
+aV96ZQABAE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUA
+AACdAQAADgAAAAAAAABfU2VuZCBEb2N1bWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0Zv
+cndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4A
+AAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcgAGAD58
+</rawitemdata></item></note>
+

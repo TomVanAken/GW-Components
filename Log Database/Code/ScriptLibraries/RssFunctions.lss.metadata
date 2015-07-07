@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="1.0" replicaid="C1257DA90055E739" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="312" sequence="8" unid="294DAC2DE9EB5D4C852572680081CACF">
+<created><datetime>20070119T183740,63-05</datetime></created>
+<modified><datetime>20150309T112111,47+01</datetime></modified>
+<revised><datetime>20150309T112111,46+01</datetime></revised>
+<lastaccessed><datetime>20150309T112111,46+01</datetime></lastaccessed>
+<addedtofile><datetime>20141212T155049,61+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Julian Robichaux/O=nsftools</name><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name="$TITLE" sign="true"><text>RssFunctions</text></item>
+<item name="$Flags"><text>s34Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+
+</note>

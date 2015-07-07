@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257DA90055E739'>
+<noteinfo noteid='33a' unid='64B47485AA345220C1257DB20050EF24' sequence='2'>
+<created><datetime>20141218T154401,00+01</datetime></created>
+<modified><datetime>20150309T112111,81+01</datetime></modified>
+<revised><datetime>20150309T112111,80+01</datetime></revised>
+<lastaccessed><datetime>20150309T112111,80+01</datetime></lastaccessed>
+<addedtofile><datetime>20141218T165434,09+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Dave Horak/OU=AXNIS/O=AGFA</name><name
+>CN=UREMEA Sign/OU=PWRAP/OU=NET/O=AGFA</name><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name
+>CN=UREMEA Sign/OU=PWRAP/OU=NET/O=AGFA</name><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name
+>CN=UREMEA Sign/OU=PWRAP/OU=NET/O=AGFA</name><name>CN=Dave Horak/OU=AXNIS/O=AGFA</name><name
+>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$TITLE' sign='true'><text>_Form Frameset|_frsFormFrameset</text></item>
+<item name='$WindowTitle' sign='true'><formula>@DbTitle</formula></item>
+<item name='$Comment' sign='true'><text>Basic Configuration Component 1.00 - Frameset to display forms in the general look and feel</text></item>
+<item name='$FrameSet' sign='true'>
+<rawitemdata type='1'>
+7/8YAAIAAwAAAAAAAAAAAAAAAAAAAAAA8P8+AEUAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAUAAAAA
+AAIAAQAAAAAAAQAAAAAAAAABACMAAwABAAMAAQDx/zoAEQAAAABAAAECAAEAAQAAAAAABgAAAAAA
+AQAAAAAAAABIZWFkZXIBAP///wABAAAJAQD///8A9v8uAAAAAAADAAcADAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAF9wYWdUb3BGcmFtZfH/QgARAQAAAEAAAQEAAQABAAAAAAAHAAAABwABAAAAAAAAAENv
+bnRlbnRDb250ZW50AQD///8AAQAACQEA////AA==
+</rawitemdata></item>
+<item name='$Flags'><text>#34CQwP</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+
