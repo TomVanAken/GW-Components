@@ -235,7 +235,7 @@ public class ConfigurationManager {
 			if(testCache.after(cacheTime) || !hmConfDocs.containsKey(strConfig))  init();
 
 			//if config doc is not in 
-			Session session = Factory.getSession(SessionType.FULL_ACCESS);
+			Session session = Factory.getSession(SessionType.SIGNER);
 			Database db = session.getCurrentDatabase();
 			Document doc = null;
 			//retrieve configuration via cached id
