@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257E670046A202" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="4ba" sequence="40" unid="E32D909D2F6D958FC1257E7500693688">
+<created><datetime dst="true">20150701T210912,40+02</datetime></created>
+<modified><datetime dst="true">20150707T103023,96+02</datetime></modified>
+<revised><datetime dst="true">20150707T103023,95+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150707T103023,96+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150701T210912,41+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>com/gw/common/log/LogItem.java</text></item>
+
+
+
+
+
+
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>com/gw/common/log/LogItem.java</text></item>
+<item name="$Comment"><text>GW Components API 1.0.0</text></item></note>

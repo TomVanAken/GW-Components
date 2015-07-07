@@ -1,0 +1,306 @@
+'++LotusScript Development Environment:2:5:(Options):0:74
+Option Public
+Option Declare
+
+%REM
+Name: 		ConfigurationManager class
+Purpose: 	The ConfigurationManager class allows users to retrieve keyword values from both the keyword profile and keyword document(s)
+Created:	2014-12-09
+Modification list (author, date, short modification description):
+%END REM
+
+'++LotusScript Development Environment:2:5:(Forward):0:1
+Declare Public Class ConfigurationManager
+Declare Sub Initialize
+
+'++LotusScript Development Environment:2:5:(Declarations):0:10
+Private boolDebug As Integer
+Dim configMgr As ConfigurationManager
+Public Class ConfigurationManager
+	
+	'private properties
+	
+	Private session As NotesSession 
+	Private dbCurrent As NotesDatabase
+	Private dbReference As NotesDatabase
+	Private strProfile As String
+	Private vwKeywordsByID As NotesView
+	Private vwKeywordsByCategory As NotesView
+	Private boolCurrentViewLoaded As Integer
+	Private boolTargetViewLoaded As Integer
+	Private boolCurrentCatViewLoaded As Integer
+	Private boolTargetCatViewLoaded As Integer
+	
+	Sub New()
+		'constructor
+		If ( boolDebug ) Then On Error Goto ErrorHandler
+		Set Me.session = New NotesSession
+		Set Me.dbCurrent = Me.session.currentDatabase
+		
+		'dont load lookup view until they are needed - lazy loading
+		boolCurrentViewLoaded = False
+		boolTargetViewLoaded = False
+		boolCurrentCatViewLoaded = False
+		boolTargetCatViewLoaded = False
+		Set Me.dbReference = Me.dbCurrent
+		Exit Sub
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		Cstr( Getthreadinfo(1) ) & ", Line: " & Cstr( Erl )
+	End Sub
+	
+	Public Function getDatabase( strKey As String ) As NotesDatabase
+		'retrieve database handle from configuration document
+		If ( boolDebug ) Then On Error Goto ErrorHandler
+		'retrieve server, replica ID and filepath from config document
+		Dim dbResult As NotesDatabase
+		Dim docConfig As NotesDocument
+		'return reference database if database key is "Main"
+		If ( Ucase( strKey ) = "MAIN" ) Then
+			Set getDatabase = Me.dbReference
+			Exit Function
+		End If
+		'retrieve config document from reference database
+		Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+		If Not( strKey = "" ) Then
+			If Not ( docConfig Is Nothing ) Then		
+				Dim strDatabaseDetails As String
+				strDatabaseDetails = CStr( docConfig.ColumnValues( 1 ) )
+				If ( strDatabaseDetails <> "" ) Then
+					Set dbResult = New NotesDatabase(docConfig.getItemValue("$fldValueDbrServer")(0), docConfig.getItemValue("$fldValueDbrFile")(0))
+				Else
+					Set dbResult = Nothing
+				End If
+			End If
+		Else
+			Set dbResult = Me.dbCurrent
+		End If
+		Set getDatabase = dbResult
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		Cstr( Getthreadinfo(1) ) & ", Line: " & Cstr( Erl )
+	End Function
+	
+	
+	Public Function getDateTime( strKey As String ) As NotesDateTime
+		'retrieve date value from configuration document
+		If ( boolDebug ) Then On Error Goto ErrorHandler
+		Dim datResult As NotesDateTime
+		Dim docConfig As NotesDocument
+		'retrieve config document
+		Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+		If Not ( docConfig Is Nothing ) Then
+			Set datResult = New NotesDateTime( docConfig.GetItemValue( "$fldValueDateTime" )( 0 ) )
+		End If
+		Set getDateTime = datResult
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		Cstr( Getthreadinfo(1) ) & ", Line: " & Cstr( Erl )
+	End Function
+	
+	
+	Public Function getLong( strKey As String ) As Long
+		'retrieve multi-numeric value from configuration document
+		If ( boolDebug ) Then On Error GoTo ErrorHandler
+		Dim variResult As Long
+		Dim docConfig As NotesDocument
+		'retrieve config document
+		Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+		If Not( docConfig Is Nothing ) Then
+			variResult = CLng(docConfig.GetItemValue( "$fldValueNum" ))			
+		End If
+		getLong = variResult
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		CStr( GetThreadInfo(1) ) & ", Line: " & CStr( Erl )
+	End Function
+	
+	Public Function getDouble( strKey As String ) As Variant
+		'retrieve multi-numeric value from configuration document
+		If ( boolDebug ) Then On Error Goto ErrorHandler
+		Dim variResult As Double
+		Dim docConfig As NotesDocument
+		'retrieve config document
+		Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+		If Not( docConfig Is Nothing ) Then
+			variResult = CDbl(docConfig.GetItemValue( "$fldValueNum" ))			
+		End If
+		getDouble = variResult
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		Cstr( Getthreadinfo(1) ) & ", Line: " & Cstr( Erl )
+	End Function
+	
+	
+	Public Function getText( strKey As String ) As String
+		'retrieve single text value from configuration document
+		If ( boolDebug ) Then On Error Goto ErrorHandler
+		Dim strResult As String
+		strResult = ""
+		Dim docConfig As NotesDocument
+		'retrieve config document
+		Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+		If Not( docConfig Is Nothing ) Then
+			Select Case docConfig.GetItemValue( "$fldType" )( 0 )
+			Case "TXT"
+				strResult = docConfig.GetItemValue( "$fldValueTxt" )( 0 )
+			Case "RBN"
+				strResult = docConfig.GetItemValue( "$fldValueRbn" )( 0 )
+		End Select
+			getText = strResult
+		End If
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		Cstr( Getthreadinfo(1) ) & ", Line: " & Cstr( Erl )
+	End Function
+	
+	
+	Public Function getTextList( strKey As String ) As Variant
+		'retrieve multi-text value from configuration document
+		If ( boolDebug ) Then On Error Goto ErrorHandler
+		Dim variResult As Variant
+		Dim docConfig As NotesDocument
+		'retrieve config document
+		Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+		If Not( docConfig Is Nothing ) Then
+			Select Case docConfig.GetItemValue( "$fldType" )( 0 )
+			Case "TXL"
+				variResult = docConfig.GetItemValue( "$fldValueTxl" )
+			Case "NAM"
+				variResult = docConfig.GetItemValue( "$fldValueNam" )
+			Case "CBX"
+				variResult = docConfig.GetItemValue( "$fldValueCbx" )
+		End Select
+		End If
+		getTextList = variResult
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		Cstr( Getthreadinfo(1) ) & ", Line: " & Cstr( Erl )
+	End Function
+	
+	Private Function getDocument( dbParam As NotesDatabase, strKey As String ) As NotesDocument
+		'retrieves keyword document by ID
+		If ( boolDebug ) Then On Error Goto ErrorHandler
+		'load view if this has not been done already
+		If ( ( dbParam.Server & "&&" & dbParam.FilePath ) <> ( Me.dbCurrent.Server & "&&" & Me.dbCurrent.FilePath ) ) Then
+			'target database is different from current database. check if the view needs to be loaded
+			If Not ( Me.boolTargetViewLoaded ) Then
+				Set Me.vwKeywordsByID = dbParam.GetView( "_vwLkupConfigsByID" )
+				If ( Me.vwKeywordsByID Is Nothing ) Then Error 9210, "Unable to load configuration lookup view"
+				Call Me.vwKeywordsByID.Refresh()
+				Me.boolTargetViewLoaded = True
+			End If
+		Else
+			'target database is the same as the current database, check if the view needs to be loaded
+			If Not ( Me.boolCurrentViewLoaded ) Then
+				Set Me.vwKeywordsByID = Me.dbCurrent.GetView( "_vwLkupConfigsByID" )
+				If ( Me.vwKeywordsByID Is Nothing ) Then Error 9210, "Unable to load configuration lookup view"
+				Call Me.vwKeywordsByID.Refresh()
+				Me.boolCurrentViewLoaded = True
+			End If
+		End If
+		'get keyword value from keyword document
+		Set GetDocument = Me.vwKeywordsByID.GetDocumentByKey( strKey, True )
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		Cstr( Getthreadinfo(1) ) & ", Line: " & Cstr( Erl )
+	End Function
+	
+	%REM
+		Function getSequence
+		Description: Returns the next sequence number
+	%END REM
+	Function getNextSequence(strKey As String) As String
+		'retrieve multi-text value from configuration document
+		If ( boolDebug ) Then On Error GoTo ErrorHandler
+		Dim variResult As String
+		variResult = ""
+		Dim docConfig As NotesDocument
+
+		Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+		If Not( docConfig Is Nothing ) Then
+			Dim intTries As Integer
+			intTries = 0
+			'try 5 times to retrieve config document (in unlocked state)
+			If(docConfig.getItemValue("$fldLockedBy")(0) <> "") Then
+				intTries = intTries + 1				
+				'Wait 0,5 sec and try again
+				Sleep(0.5)
+				Set docConfig = Me.GetDocument( Me.dbReference, strKey )
+				If intTries >= 5 Then Error 1055, "Sequence " + strKey + " is locked by " + docConfig.getItemValue("$fldLockedBy")(0)
+			End If
+			'Save to lock document
+			Call docConfig.replaceItemValue("$fldLockedBy", session.Effectiveusername)
+			Call docConfig.save(True, True)
+			
+			'Get Next Sequence
+			Dim lngSequence As Long
+			Dim strYear As String
+			lngSequence = CLng(docConfig.getItemValue("$fldValueSequence")(0)) 'Init
+			If docConfig.getItemValue("$fldResetYearly")(0) = "1" Then
+				strYear = CStr(Year(Now))
+				If strYear <> docConfig.getItemValue("$fldCurrentYear")(0) Then
+					lngSequence = 0 'Yearly reset
+				End If
+			Else
+				strYear = ""
+			End if
+			lngSequence = lngSequence + 1 'Next sequence
+			
+			'Format sequence number
+			variResult = docConfig.getItemValue("$fldPrefix")(0)
+			If strYear <> "" Then variResult = variResult + strYear + "-"
+			
+			'Make sure we have the minimum number of characters
+			Dim minChar As Integer
+			minChar = docConfig.getItemValue("$fldMinChars")(0)
+			If Len(CStr(lngSequence)) < minChar Then
+				variResult = variResult + Right(UString$(minChar, "0") & lngSequence, minChar)
+			Else
+				variResult = variResult & lngSequence
+			End If
+			
+			'Set Suffix
+			variResult = variResult + docConfig.getItemValue("$fldSuffix")(0)
+			
+			'Save document
+			Call docConfig.replaceItemValue("$fldCurrentYear", strYear)
+			Call docConfig.replaceItemValue("$fldValueSequence", lngSequence)
+			Call docConfig.replaceItemValue("$fldLockedBy", "") 'Unlock
+			Call docConfig.save(True, True)
+		End If
+		getNextSequence = variResult
+		Exit Function
+		
+ErrorHandler:
+		Error Err, Error$ & Chr(13) & "Module: " &_
+		CStr( GetThreadInfo(1) ) & ", Line: " & CStr( Erl )
+		getNextSequence = ""
+	End Function
+	
+End Class
+'++LotusScript Development Environment:2:2:Initialize:1:10
+Sub Initialize
+	'toggle debug flag. if enabled, error-tracing is enabled, if disabled, no error handling is done
+	boolDebug = True
+	Set configMgr = New ConfigurationManager()
+End Sub
+
+
+
+

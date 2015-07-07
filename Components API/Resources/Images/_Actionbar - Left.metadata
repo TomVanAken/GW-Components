@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257E670046A202" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1fe" sequence="10" unid="3F9D2ED59FC6B094C1257A830044DDF9">
+<created><datetime dst="true">20120924T143212,73+02</datetime></created>
+<modified><datetime dst="true">20150707T103023,54+02</datetime></modified>
+<revised><datetime dst="true">20150707T103023,53+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150707T103023,54+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150617T145131,22+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$ELEMENTCATEGORY" sign="true"><text>Notes GUI</text></item>
+<item name="$ELEMENTTYPE" sign="true"><text>Image Resource</text></item>
+<item name="$ELEMENTAUTHOR" sign="true"><text>CN=Ferdy Christant/OU=EHV/OU=CORP/O=PHILIPS</text></item>
+<item name="$ELEMENTDESCRIPTION" sign="true"><text/></item>
+<item name="$ELEMENTVERSION" sign="true"><text>1.0.0</text></item>
+<item name="$ELEMENTSTATUS" sign="true"><text>Final</text></item>
+<item name="$IDENTITYCOMPANY" sign="true"><text>Royal Philips N.V. The Netherlands</text></item>
+<item name="$IDENTITYDEPARTMENT" sign="true"><text>Lotus Notes Competence Center IT</text></item>
+<item name="$ELEMENTNAME" sign="true"><text>29E</text></item>
+<item name="$ElementUnique" sign="true"><text>FCHT-6Q4E3L</text></item>
+<item name="$ELEMENTUNID" sign="true"><text>C1257169003D2AF5C125701C00296099</text></item>
+<item name="$ELEMENTVERSIONMAJOR" sign="true"><text>1</text></item>
+<item name="$ELEMENTVERSIONMINOR" sign="true"><text>0</text></item>
+<item name="$ELEMENTVERSIONPATCH" sign="true"><text>0</text></item>
+
+
+<item name="$MimeType" sign="true"><text>image/jpeg</text></item>
+<item name="$FileModDT" sign="true"><datetime>20120217T084001,42+01</datetime></item>
+<item name="$Flags"><text>D34CiQ</text></item>
+<item name="$ImageNames" sign="true"><text>arrow-left.jpg</text></item>
+<item name="$TITLE" sign="true"><textlist><text>_Actionbar - Left</text><text>_imgArrowLeft.jpg</text></textlist></item>
+<item name="$Comment" sign="true"><text>GW Components API 1.0.0</text></item>
+<item name="$DesignerVersion" sign="true"><text>8.5.3</text></item></note>

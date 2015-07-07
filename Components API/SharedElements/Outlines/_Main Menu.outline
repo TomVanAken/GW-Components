@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='filter' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257E670046A202'>
+<noteinfo noteid='152' unid='A9AC02008B1134BBC1257A830044B99C' sequence='13'>
+<created><datetime dst='true'>20120924T143039,64+02</datetime></created>
+<modified><datetime dst='true'>20150707T103023,06+02</datetime></modified>
+<revised><datetime dst='true'>20150707T103023,05+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150707T103023,06+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150617T145130,42+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$POID'><datetime>20141121T085002,03+01</datetime></item>
+<item name='$SiteMapList' sign='true'>
+<rawitemdata type='1a'>
+AQYBAAEAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$TITLE'><textlist><text>_Main Menu</text><text>_outlMainMenu</text></textlist></item>
+<item name='$Comment'><text>GW Components API 1.0.0</text></item>
+<item name='$Flags'><text>m34</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

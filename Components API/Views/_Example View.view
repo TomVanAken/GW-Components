@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257E670046A202'>
+<noteinfo noteid='196' unid='006A8030081B13A0C1257A8300448DD4' sequence='11'>
+<created><datetime dst='true'>20120924T142847,56+02</datetime></created>
+<modified><datetime dst='true'>20150707T103023,24+02</datetime></modified>
+<revised><datetime dst='true'>20150707T103023,23+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150707T103023,24+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150617T145130,76+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>_Example View|_vwExample</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+KAAFABoAFQACAAkABAAkQ29uZmxpY3QkUkVGAAQABAAAAAgAZgADAA==
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+BgAAAABE
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQAEAAEACAQAAFZDAAACAAgACgAKAHAABQCQCAAAAAAIAAAAAAICAAAAVkMAAAAACAAKAAoAcAAG
+AAAIAAAAAAAAAAAAAgIAAABWQwAAAAAIAAoACgBwAAcAAAgAAAAAAAAAAAACAgAAAFZDAAAAAAgA
+CgAKAHAACAAACAAAAAAAAAAAAAICAAAAJDBDb2x1bW4gMQoAAAAIAJIAAwABBQEABAB/QTD/Q29s
+dW1uIDIKAAAACACSAAMAAQUBAAQAf0Ew/0NvbHVtbiAzCgAAAAgAkgADAAEFAQAEAH9BMP9Db2x1
+bW4gNAoAAAAIAJIAAwABBQEABAB/QTD/JgABAAAAAQEACQEAAAoBAQ4KAAAYAK0rAQABAAEAAAAA
+AAAAAABXQwkAAAgAAAAAAAAAAAAAAAAAAAAAAQDAAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MKAAAI
+AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDCwAACAAAAAAAAAAAAAAA
+AAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABXQwwAAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAA
+AAD//wAAAAAAAAAAAAAAAAAAQgAEAAAAAQD///8ABQDg8f8AAQDh4eEAAAAAAAAAAAABAP///wAB
+AP///wAAAAEAAAAAAAEAgICAAAEAAAAAAAAACAAAAAAAAQBYQwAMgAEAAAAAAAECAgIBAQEBBwQD
+AAAAAAAAAAAtLSA6WUMAAAgAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA
+AAAAAAAAAC4sJAA=
+</rawitemdata></item>
+<item name='$Fonts' sign='true'><textlist><text>5</text><text>38</text><text
+>Arial</text><text>6</text><text>38</text><text>Arial</text><text>7</text><text
+>38</text><text>Arial</text><text>8</text><text>38</text><text>Arial</text><text
+>9</text><text>38</text><text>Arial</text><text>10</text><text>38</text><text
+>Arial</text><text>11</text><text>38</text><text>Arial</text><text>12</text><text
+>38</text><text>Arial</text></textlist></item>
+<item name='$Comment' sign='true'><text>GW Components API 1.0.0</text></item>
+<item name='$FrameInfo' sign='true'><textlist><text>fsEntrance</text><text
+>Content</text></textlist></item>
+<item name='$Flags'><text>Yw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABSZBcmlhbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cAQAAAAEAAAAAAAEAAAAA
+AAAABQABCSEAAQB5/2wAAQD///8AAQAAAAAAAQD///8AAQAAoeAAAwAcAAAAAAAAAAAAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD8/zoAAAAAAAEAAAAAAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAABAP///wAAAAAA
+AAAAAAAAvv8cAAAAAQAAAJ8BAAAGAAAAAAAAAEJ1dHRvbg==
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwBAAAAAQAAAAAAAQAAAAAAAAAQAAEJIQABAL7/HAAAAAEAAACfAQAABgAAAAAAAABCdXR0b24=
+</rawitemdata></item></note>
+

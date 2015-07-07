@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257E670046A202" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="15e" sequence="10" unid="13114FDBC42C1252C1257A830044DDF4">
+<created><datetime dst="true">20120924T143212,68+02</datetime></created>
+<modified><datetime dst="true">20150707T103023,10+02</datetime></modified>
+<revised><datetime dst="true">20150707T103023,09+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150707T103023,10+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150617T145130,48+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name="$Flags"><text>34CiQ</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+
+<item name="$ImageNames" sign="true"><text>but_AddrPicker.gif</text></item>
+<item name="$TITLE" sign="true"><textlist><text>_Buttons - Address Picker</text><text>_imgAddrPicker.gif</text></textlist></item>
+<item name="$Comment" sign="true"><text>GW Components API 1.0.0</text></item>
+<item name="$DesignerVersion" sign="true"><text>8.5.3</text></item></note>

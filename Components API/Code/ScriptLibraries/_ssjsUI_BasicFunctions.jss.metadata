@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="1.0" replicaid="C1257E670046A202" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="23a" sequence="33" unid="28BBF1586713F3E3C1257A830044CA1B">
+<created><datetime dst="true">20120924T143121,87+02</datetime></created>
+<modified><datetime dst="true">20150707T103023,68+02</datetime></modified>
+<revised><datetime dst="true">20150707T103023,67+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150707T103023,68+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150617T145131,50+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Dave Horak/OU=AXNIS/O=AGFA</name><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name="$POID"><datetime>20141121T085002,22+01</datetime></item>
+<item name="$TITLE" sign="true"><text>_ssjsUI_BasicFunctions</text></item>
+<item name="$Flags"><text>.5834Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+<item name="$Comment"><text>GW Components API 1.0.0</text></item></note>

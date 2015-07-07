@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257E670046A202'>
+<noteinfo noteid='16e' unid='1370E5019BB4FEE3C1257A830044A224' sequence='41'>
+<created><datetime dst='true'>20120924T142939,56+02</datetime></created>
+<modified><datetime dst='true'>20150707T103023,14+02</datetime></modified>
+<revised><datetime dst='true'>20150707T103023,13+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150707T103023,14+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150617T145130,56+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$TITLE' sign='true'><text>_Entrance Frameset|_frsEntrance</text></item>
+<item name='$WINDOWTITLE' sign='true'><formula>@DbTitle</formula></item>
+<item name='$Comment' sign='true'><text>GW Components API 1.0.0</text></item>
+<item name='$FrameSet' sign='true'>
+<rawitemdata type='1'>
+7/8YAAIABwAAAAAAAAAAAAAAAAAAAAAA8P8+AEUAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAUAAAAA
+AAIAAQAAAAAAAQAAAAAAAAABACMAAwABAAMAAQDx/zoAEQAAAABAAAECAAEAAQAAAAAABgAAAAAA
+AQAAAAAAAABIZWFkZXIBAP///wABAAAJAQD///8A9v8uAAAAAAADAAcADAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAF9wYWdUb3BGcmFtZfD/PgABAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAFAAAAAAABAAIA
+AAAAAAUAAAAAAAAAAwABAAEAvgADAE8A8P8+AAEAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAUAAAAA
+AAIAAQAAAAAABQAAAAAAAAADAAEAAQAyAAMAAQDx/0UAEQAAAABAAAEDAAEAAQAAAAAACgAAAAcA
+AQAAAAAAAABOYXZpZ2F0aW9uQ29udGVudAEA////AAEAAAoBAAAAAAA/9v82AAAAAAADAAcAFAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAF9wYWdNYWluTWVudUVudHJhbmNl8f89ABEAAAAAQAABAgABAAEA
+AAAAAAkAAAAAAAEAAAAAAAAAQ29weXJpZ2h0AQD///8AAQAACQEA////AD/2/zcAAAAAAAMABwAV
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAX3BhZ0NvcHlyaWdodEVudHJhbmNlP/H/PwARAQAAAEAAAQMA
+AQABAAAAAAAHAAAABAABAAAAAAAAAENvbnRlbnRNYWluAQD///8AAQAACQEA////AD/2/y0AAAAA
+AAMABwALAAAAAAAAAAAAAAAAAAAAAAAAAAAAX3BhZ1dlbGNvbWU/
+</rawitemdata></item>
+<item name='$Flags'><text>#34CQw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

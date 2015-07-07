@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xp:this.afterRenderResponse><![CDATA[#{javascript:sessionScope.ErrorMessage=""}]]></xp:this.afterRenderResponse>
+	<xp:this.resources>
+		<xp:styleSheet>
+			.code label { display: inline-block; margin-right: 10px; text-align:
+			right; width: 40px; } .code {font-family:Lucida Console;} .debug
+			{font-size:0.9em;} .code .errorLine {font-weight:bold;color:red;}
+		</xp:styleSheet>
+	</xp:this.resources>
+	<xp:this.beforePageLoad><![CDATA[#{javascript://Init viewScope jsError variables
+try{
+	viewScope._err_jsErrorMessage = "";
+	viewScope._err_jsErrLine = "";
+	viewScope._err_jsCode = null;
+	viewScope._err_componentId = "";
+	viewScope._err_propertyId = "";
+	viewScope._err_component = null;
+	viewScope._err_jsError = null;
+
+
+
+	//the actual exception is stored in the requestScope by default
+	var exception:java.lang.Exception = requestScope.error;
+	
+	//Looping through errors
+	var errObj = exception
+	var getNextCause = true;
+	var counter = 0;
+	while(getNextCause){
+		counter ++;print(counter + ": " + errObj.toString());
+		//Handling server side javascript error
+		if(errObj instanceof com.ibm.jscript.InterpretException){
+			viewScope._err_jsError = errObj;
+			viewScope._err_jsErrorMessage = errObj.getMessage();
+			viewScope._err_jsErrLine = errObj.getErrorLine();
+			viewScope._err_jsCode = errObj.getExpressionText().split(@NewLine())
+		}
+		//Handling this type of error makes the system crash
+		if(errObj instanceof com.ibm.xsp.FacesExceptionEx){
+			getNextCause = false;
+		}
+		
+		//Handling evaluation on component
+		if(errObj instanceof com.ibm.xsp.exception.EvaluationExceptionEx){
+			print("Found component with id..." + errObj.getErrorComponentId());
+		
+			viewScope._err_componentId = errObj.getErrorComponentId();
+			viewScope._err_propertyId = errObj.getErrorPropertyId();
+		}
+				
+		if(getNextCause)errObj = errObj.getCause();
+		if(!errObj || errObj==null) getNextCause = false;
+	}
+	//Get Page Name
+	var fromPage = "";
+	try {
+		//Use history to retrieve URL, because sometimes errorpage is given as current url
+		var history:string=context.getHistoryUrl(1);
+		fromPage =  @Contains(history,"?")?@Left(history, "?"):history;
+} catch(e) {
+	fromPage = "unknown";
+}	
+	
+	xspOpenLog.createFromErrorPage(viewScope._err_jsError, fromPage, viewScope._err_componentId, viewScope._err_propertyId);
+} catch(e) {
+	xspOpenLog.logException(e, this)
+}
+
+}]]></xp:this.beforePageLoad>
+	<xp:text id="headerError" escape="false" value="An error has occured."
+		tagName="h1"></xp:text>
+	<xp:text id="label1" escape="false"
+		value="We apologize for the inconvenience. Please try again later.">
+	</xp:text>
+	<xp:br></xp:br>
+	<xp:br></xp:br>
+	<xp:link escape="true" text="Click here to return to the home page."
+		id="lnk_HomePage" value="/home.xsp"></xp:link>
+	<xp:br></xp:br>
+	<xp:br></xp:br>
+	<xp:br></xp:br>
+	<xp:section id="sectionDetail" initClosed="true" type="wide"
+		header="Detailed information" headerStyle="font-size:1.2em;">
+		<xp:table>
+			<xp:tr>
+				<xp:td>
+					<xp:label value="Page Name:" id="lbl_ErrPageName" for="lnk_ErrPage" />
+				</xp:td>
+				<xp:td>
+
+					<xp:link escape="true" id="lnk_ErrPage">
+						<xp:this.text><![CDATA[#{javascript:try {
+		//Use history to retrieve URL, because sometimes errorpage is given as current url
+		var history:string=context.getHistoryUrl(1);
+		return @Contains(history,"?")?@Left(history, "?"):history;
+} catch(e) {
+	return "unknown";
+}	
+}]]></xp:this.text>
+						<xp:this.value><![CDATA[#{javascript:try {
+		//Use history to retrieve URL, because sometimes errorpage is given as current url
+		var history:string=context.getHistoryUrl(1);
+		return @Contains(history,"?")?@Left(history, "?"):history;
+} catch(e) {
+	return "unknown";
+}	
+}]]></xp:this.value>
+					</xp:link>
+				</xp:td>
+			</xp:tr>
+			<xp:tr>
+				<xp:td>
+					<xp:label value="Component Id:" id="lbl_ErrComponentId"
+						for="c_ErrComponentId" />
+				</xp:td>
+				<xp:td>
+					<xp:text escape="true" id="c_ErrComponentId" value="#{viewScope._err_componentId}"></xp:text>
+				</xp:td>
+			</xp:tr>
+			<xp:tr>
+				<xp:td>
+					<xp:label value="Property:" id="lbl_ErrPropertyID" for="c_ErrPropertyID" />
+				</xp:td>
+				<xp:td>
+					<xp:text escape="true" id="c_ErrPropertyID" value="#{viewScope._err_propertyId}">
+
+					</xp:text>
+				</xp:td>
+			</xp:tr>
+			<xp:tr>
+				<xp:td>
+					<xp:label value="Error Message:" id="lbl_ErrMessage" for="c_ErrMessage" />
+				</xp:td>
+				<xp:td>
+					<xp:text escape="true" id="c_ErrMessage"
+						value="#{javascript:try{requestScope.error.getMessage()}catch(e){return 'Unknown error'}}"></xp:text>
+				</xp:td>
+			</xp:tr>
+		</xp:table>
+		<br />
+		<xp:section id="sectionJavaScript" header="JavaScript Source"
+			type="wide" rendered="#{javascript:viewScope._err_jsCode != null;}">
+			<xp:table>
+				<xp:tr>
+					<xp:td>
+						<xp:label value="JavaScript Error:" id="lbl_ErrJsErrorMsg"
+							for="c_ErrJsErrorMsg" />
+					</xp:td>
+					<xp:td>
+						<xp:text escape="false" id="c_ErrJsErrorMsg"
+							value="#{viewScope._err_jsErrorMessage}"></xp:text>
+					</xp:td>
+				</xp:tr>
+			</xp:table>
+			<br />
+			<xp:panel styleClass="code">
+				<xp:repeat id="r_JsCode" rows="3000" indexVar="ir_JsCode"
+					var="vr_JsCode" value="#{viewScope._err_jsCode}">
+
+					<xp:label id="lbl_JsCodeLine" disableTheme="true" for="c_JsCodeLine">
+						<xp:this.value><![CDATA[#{javascript:(ir_JsCode + 1) + " : "}]]></xp:this.value>
+					</xp:label>
+					<xp:text escape="false" id="c_JsCodeLine" disableTheme="true">
+						<xp:this.value><![CDATA[#{javascript:try {
+	var errString = vr_JsCode.toString();
+	errString = errString.replace(String.fromCharCode(9), "  "); 
+	return errString.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(' ','&nbsp;')
+} catch(e) {}}]]></xp:this.value>
+						<xp:this.styleClass><![CDATA[#{javascript:if((ir_JsCode+1) == viewScope._err_jsErrLine)"errorLine"}]]></xp:this.styleClass>
+					</xp:text>
+					<xp:text escape="false">
+						<xp:this.value><![CDATA[<br/>]]></xp:this.value>
+					</xp:text>
+				</xp:repeat>
+			</xp:panel>
+		</xp:section>
+		<br />
+		<xp:section id="sectionAppScope" header="Application Scope"
+			type="wide">
+			<xp:table styleClass="debug">
+				<xp:repeat id="r_AppScope" rows="30"
+					value="#{javascript:applicationScope.keySet();}" var="vr_AppScope">
+					<xp:tr>
+						<xp:td>
+							<xp:label id="lbl_AppScope" value="#{javascript:vr_AppScope}"
+								for="c_AppScope" />
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="c_AppScope"
+								value="#{javascript:applicationScope.get(vr_AppScope)}" />
+						</xp:td>
+					</xp:tr>
+				</xp:repeat>
+			</xp:table>
+		</xp:section>
+		<br />
+		<xp:section id="sectionSessScope" header="Session Scope"
+			type="wide">
+			<xp:table styleClass="debug">
+				<xp:repeat id="r_SessScope" rows="30"
+					value="#{javascript:sessionScope.keySet();}" var="vr_SessScope">
+					<xp:tr>
+						<xp:td>
+							<xp:label id="lbl_SessScope" value="#{javascript:vr_SessScope}"
+								for="c_SessScope" />
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="c_SessScope"
+								value="#{javascript:sessionScope.get(vr_SessScope)}" />
+						</xp:td>
+					</xp:tr>
+				</xp:repeat>
+			</xp:table>
+		</xp:section>
+		<br />
+		<xp:section id="sectionReqScope" header="Request Scope"
+			type="wide">
+			<xp:table styleClass="debug">
+				<xp:repeat id="r_ReqScope" rows="30"
+					value="#{javascript:requestScope.keySet();}" var="vr_ReqScope">
+					<xp:tr>
+						<xp:td>
+							<xp:label id="lbl_ReqScope" value="#{javascript:vr_ReqScope}"
+								for="c_ReqScope" />
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="c_ReqScope"
+								value="#{javascript:requestScope.get(vr_ReqScope)}" />
+						</xp:td>
+					</xp:tr>
+				</xp:repeat>
+			</xp:table>
+		</xp:section>
+		<br />
+		<xp:section id="sectionViewScope" header="View Scope" type="wide">
+			<xp:table styleClass="debug">
+				<xp:repeat id="r_ViewScope" rows="30"
+					value="#{javascript:viewScope.keySet();}" var="vr_ViewScope">
+					<xp:tr>
+						<xp:td>
+							<xp:label id="lbl_ViewScope" value="#{javascript:vr_ViewScope}"
+								for="c_ViewScope" />
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="c_ViewScope"
+								value="#{javascript:viewScope.get(vr_ViewScope)}" />
+						</xp:td>
+					</xp:tr>
+				</xp:repeat>
+			</xp:table>
+		</xp:section>
+		<br />
+		<xp:section id="sectionStackTrace" header="Stack Trace"
+			type="wide">
+			<xp:panel styleClass="code">
+				<xp:repeat id="r_StackTrace" rows="300"
+					value="#{javascript:try{requestScope.error.getStackTrace()}catch(e){};}"
+					var="vr_StackTrace">
+					<xp:text escape="false" id="c_StackTrace" disableTheme="true">
+						<xp:this.value><![CDATA[#{javascript:try {vr_StackTrace.toString() + "<br/>"}catch(e){}}]]></xp:this.value>
+					</xp:text>
+				</xp:repeat>
+			</xp:panel>
+		</xp:section>
+	</xp:section>
+</xp:view>

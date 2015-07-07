@@ -1,0 +1,92 @@
+'++LotusScript Development Environment:2:5:(Options):0:74
+Option Public
+Option Declare
+
+
+'++LotusScript Development Environment:2:5:(Forward):0:1
+Declare Class objClipboard
+
+'++LotusScript Development Environment:2:5:(Declarations):0:10
+Declare Private Function GetClipboardData Lib "User32" (Byval wFormat As Long) As Long
+Declare Private Function SetClipboardData Lib "user32" (Byval wFormat As Long, Byval hData As Long) As Long
+Declare Private Function OpenClipboard Lib "User32" Alias "OpenClipboard" (Byval hwnd As Long) As Long
+Declare Private Function CloseClipboard Lib "User32" Alias "CloseClipboard" () As Long
+Declare Private Function GlobalLock Lib "kernel32" Alias "GlobalLock" (Byval hMem As Long) As Long
+Declare Private Function GlobalUnlock Lib "kernel32" Alias "GlobalUnlock" (Byval hMem As Long) As Long
+Declare Private Function GlobalAlloc Lib "kernel32" (Byval wFlags As Long, Byval dwBytes As Long) As Long
+Declare Private Function GlobalFree Lib "kernel32" (Byval hMem As Long) As Long
+Declare Private Function EmptyClipboard Lib "user32" () As Long
+Declare Private Function lstrcpyLP2Str Lib "kernel32" Alias "lstrcpyA" (Byval lpString1 As String, Byval lpString2 As Long) As Long
+Declare Private Function lstrlenLP Lib "kernel32" Alias "lstrlenA" (Byval lpString As Long) As Long
+Declare Private Sub MoveMemory Lib "kernel32" Alias "RtlMoveMemory" (Byval strDest As Any, Byval lpSource As Any, Byval Length As Any)
+Declare Private Function GetFocus Lib "User32" Alias "GetFocus" () As Long 
+
+Private Const CF_TEXT = 1
+Private Const GMEM_MOVABLE = &H2&
+Private Const GMEM_DDESHARE = &H2000&
+
+Class objClipboard
+%REM
+	Name: 		Clipboard Class
+	Purpose: 	Sets and gets text strings from the windows clipboard
+	Created:	2005-06-21
+	Modification list(author, date, short modification description):				
+%END REM	
+	
+	Public Property Get Contents As String
+%REM
+	Purpose: Property that retrieves the contents of the clipboard
+	Modification list(author, date, short modification description):				
+%END REM
+		Dim lngClipboard As Long
+		Dim lngLpStrl As Long
+		Dim lngResult As Long
+		Dim strClipboard As String
+		
+		If (OpenClipboard(0&) <> 0) Then
+			lngClipboard = GetClipboardData(CF_TEXT)
+			If (lngClipboard <> 0) Then
+				lngLpStrl = GlobalLock(lngClipboard)
+				strClipboard = Space$(lstrlenLP(lngLpStrl))
+				lngResult = lstrcpyLP2Str(strClipboard, lngLpStrl)
+				GlobalUnlock(lngClipboard)
+			Else 
+				strClipboard = "NULL"
+			End If
+			Call CloseClipboard()
+		Else
+			strClipboard = ""
+		End If
+		Contents = strClipboard
+	End Property   ' Ends the "Get" method for the "Contents" property
+	
+	
+	Public Property Set Contents As String
+%REM
+	Purpose: Property that sets the contents of the clipboard
+	Modification list(author, date, short modification description):				
+%END REM
+		Dim lngSize As Long
+		Dim lngMem As Long
+		Dim lngMemory As Long
+		Dim variTemp As Variant
+		
+		lngSize = Len(Contents)+1
+		lngMem = GlobalAlloc(GMEM_MOVABLE Or GMEM_DDESHARE, lngSize)
+		If lngMem = 0 Or Isnull(lngMem) Then Exit Property
+		lngMemory = GlobalLock(lngMem)
+		If lngMemory = 0 Or Isnull(lngMemory) Then 
+			GlobalFree(lngMem)
+			Exit Property
+		End If
+		Call MoveMemory(lngMemory, Contents, lngSize)
+		Call GlobalUnlock(lngMem)
+		If (OpenClipboard(0&) <> 0) Then
+			If (EmptyClipboard() <> 0) Then
+				variTemp = SetClipboardData(CF_TEXT, lngMem)
+			End If
+			variTemp = CloseClipboard()
+		End If
+		GlobalFree(lngMem)
+	End Property   ' Ends the "Set" method for the "Contents" property
+End Class

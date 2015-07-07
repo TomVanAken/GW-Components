@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257E670046A202'>
+<noteinfo noteid='1da' unid='6FC4572F1CE7CC66C1257A8300448DCF' sequence='10'>
+<created><datetime dst='true'>20120924T142847,51+02</datetime></created>
+<modified><datetime dst='true'>20150707T103023,40+02</datetime></modified>
+<revised><datetime dst='true'>20150707T103023,39+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150707T103023,40+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150617T145131,04+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$CIAOOwner' sign='true'><text>CN=Marc van Helvoort/OU=EHV/OU=CORP/O=PHILIPS</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>_(Lookup\Configurations by ID)|_vwLkupConfigsByID</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+hgACABwABwAkZmxkVmFsAAUABwAkZmxkVmFsAAMAAgAOAAIAJDGQAFYBAwAFADQALwAFAAsABwAC
+AAkABAAkZmxkS2V5RnVsbCRmbGRWYWwkMSRDb25mbGljdCRSRUYABAAEAAAAGAAFAAwAJGZsZElz
+Q29uZmlnaAEDAAcACgAEAAlMMVM=
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+JgACAABEiGYAAAALAJhmAAsABwAkZmxkS2V5RnVsbCRmbGRWYWw=
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQADAAYACAQAAFZDAQALAAMAAAAAAMgABQAACAABAAAAAAAAAAICAAAAVkMAAAcACQAeAAAAOgEG
+AAAIAAEAAAAAAAAAAgIAAEBWQwAAAgAEABwAAACGAAcAAAgAAAAAAAAAAAACAgAAACRmbGRLZXlG
+dWxsS2V5JGZsZFZhbEtleSB2YWx1ZR4AAgAcAAcAJGZsZFZhbAAFAAcAJGZsZFZhbAADACQxVU5J
+RBwAAgAOAAIAJDGQAFYBAwAHAAwABQAJMFMwRQAmAAEAAAABAQAJAQAACgEBDgoAABgArSsBAAEA
+AQAAAAAAAAAAAFdDCAAACAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAAP//AAAAAAAAAAAAAAAAAABX
+QwkAAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MKAAAIAAAAAAAA
+AAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAEIAAAAAAAEA////AAUA4PH/AAEAAAAA
+AAAAAAAAAAAAAQD///8AAQD///8AAAABAAAAAAABAICAgAAAAAAAAAAAAAgAAAAAAAEA
+</rawitemdata></item>
+<item name='$Fonts'><textlist><text>5</text><text>38</text><text>Verdana</text><text
+>6</text><text>38</text><text>Verdana</text><text>7</text><text>38</text><text
+>Verdana</text><text>8</text><text>38</text><text>Verdana</text><text>9</text><text
+>38</text><text>Verdana</text><text>10</text><text>38</text><text>Verdana</text></textlist></item>
+<item name='$FrameInfo' sign='true'><textlist><text>fsEntrance</text><text
+>Content</text></textlist></item>
+<item name='$Flags'><text>Yw</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABSZWZXJkYW5hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cAQAAAAEAAAAAAEEAAAAA
+AAAABQEKCCAAAQB5/2wAAQD///8AAQAAAAAAAQAAAIAAAQDf398AAQAdAAAAAAAAAAAAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD8/zoAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA
+AAAAAAAAvv8mAAAABQAAAJ0BAAALAAAAAAAAAENhdGVnb3JpX3plAAEATny+/ygAAAAFAAAAnQEA
+AA4AAAAAAAAAX0VkaXQgRG9jdW1lbnQCAAIKvv8oAAAABQAAAJ0BAAAOAAAAAAAAAFNlbmQgRG9j
+dV9tZW50AwADCr7/IgAAAAUAAACdAQAACAAAAAAAAABfRm9yd2FyZAQABAq+/ywAAAAFAAAAnQEA
+ABIAAAAAAAAAX01vdmUgVG8gRm9sZGVyLi4uBQA9fL7/LgAAAAUAAACdAQAAEwAAAAAAAABfUmVt
+b3ZlIEZyb20gRm9sZGVyAAYAPnw=
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwBAAAAAQAAAAAAQQAAAAAAAAArAQoIIAABAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29y
+aV96ZXMBAE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUA
+AACdAQAADgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0Zv
+cndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4A
+AAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcmEGAD58
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text>GW Components API 1.0.0</text></item>
+<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
+

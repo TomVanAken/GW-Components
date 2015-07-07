@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257E670046A202'>
+<noteinfo noteid='162' unid='71210A855BA6A472C1257D9E00513B5A' sequence='14'>
+<created><datetime>20141128T154716,10+01</datetime></created>
+<modified><datetime dst='true'>20150707T103023,12+02</datetime></modified>
+<revised><datetime dst='true'>20150707T103023,11+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150707T103023,12+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150617T145130,50+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Dave Horak/OU=AXNIS/O=AGFA</name><name
+>CN=UREMEA Sign/OU=PWRAP/OU=NET/O=AGFA</name><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name
+>CN=UREMEA Sign/OU=PWRAP/OU=NET/O=AGFA</name><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name
+>CN=UREMEA Sign/OU=PWRAP/OU=NET/O=AGFA</name><name>CN=Dave Horak/OU=AXNIS/O=AGFA</name><name
+>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$TITLE' sign='true'><text>_Form Frameset|_frsFormFrameset</text></item>
+<item name='$WINDOWTITLE' sign='true'><formula>@DbTitle</formula></item>
+<item name='$Comment' sign='true'><text>GW Components API 1.0.0</text></item>
+<item name='$FrameSet' sign='true'>
+<rawitemdata type='1'>
+7/8YAAIAAwAAAAAAAAAAAAAAAAAAAAAA8P8+AEUAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAUAAAAA
+AAIAAQAAAAAAAQAAAAAAAAABACMAAwABAAMAAQDx/zoAEQAAAABAAAECAAEAAQAAAAAABgAAAAAA
+AQAAAAAAAABIZWFkZXIBAP///wABAAAJAQD///8A9v8uAAAAAAADAAcADAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAF9wYWdUb3BGcmFtZfH/QgARAQAAAEAAAQEAAQABAAAAAAAHAAAABwABAAAAAAAAAENv
+bnRlbnRDb250ZW50AQD///8AAQAACQEA////AA==
+</rawitemdata></item>
+<item name='$Flags'><text>#34CQw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

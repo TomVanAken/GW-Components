@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='filter' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257E670046A202'>
+<noteinfo noteid='14e' unid='5FF7DDBBDB83B53EC1257A830044B99B' sequence='10'>
+<created><datetime dst='true'>20120924T143039,63+02</datetime></created>
+<modified><datetime dst='true'>20150707T103023,04+02</datetime></modified>
+<revised><datetime dst='true'>20150707T103023,03+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150707T103023,04+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150617T145130,40+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$SiteMapList' sign='true'>
+<rawitemdata type='1a'>
+AQYBAAEAAQBIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAABAEgAigAxDgIAZAAAAAAAAAAQAAAAOgAAAAAAAAAAAAAAQAAAAAAA
+AwACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ29uZmlndXJhdGlvbgABAPb/NwAA
+AAAAAwACABUAAAAAAAAAAAAAAAAAAAAAAAAAAABfdndBZG1pbkNvbmZpZ3VyYXRpb24/AAY+AAAA
+MAABAAsAW1RlY2hBZG1pbl0A5wB1AgEACwBbRnVuY0FkbWluXQDnAHUCHAIDAAcADAAFAAk2UzdT
+AA==
+</rawitemdata></item>
+<item name='$TITLE'><textlist><text>_Administration Menu</text><text>_outlAdminMenu</text></textlist></item>
+<item name='$Comment'><text>GW Components API 1.0.0</text></item>
+<item name='$Flags'><text>m34</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$POID'><datetime>20141121T085001,48+01</datetime></item></note>
+

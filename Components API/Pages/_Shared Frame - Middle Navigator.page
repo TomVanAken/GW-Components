@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257E670046A202'>
+<noteinfo noteid='19e' unid='4E1519DC94529A19C1257A830044A71E' sequence='12'>
+<created><datetime dst='true'>20120924T142952,30+02</datetime></created>
+<modified><datetime dst='true'>20150707T103023,26+02</datetime></modified>
+<revised><datetime dst='true'>20150707T103023,25+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150707T103023,26+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150617T145130,80+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name='$Fonts'>
+<rawitemdata type='1'>
+i/9KAAIABSJNUyBTYW5zIFNlcmlmAAAAAAAAAAAAAAAAAAAAAAAAAAYmQXJpYWwAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAA=
+</rawitemdata></item>
+<item name='OriginalModTime' sign='true'><datetime>20070118T180106,74+01</datetime></item>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$TITLE'><textlist><text>_Shared Frame - Middle Navigator</text><text
+>_pagEntranceMiddleNav</text></textlist></item>
+<item name='$Info' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAALwABAPf39wAAAAAA
+</rawitemdata></item>
+<item name='$WINDOWTITLE' sign='true'><formula>@DbTitle</formula></item>
+<item name='$Flags'><text>C34WQw</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABSZBcmlhbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cEQAAAAEAAAAAACUAAAAA
+AAAABQDPCiEAAQB5/2wAAQD/784AAQAAAAAAAQA7QWQAAQDS0tIAAAAfAAQAAACQAAUAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAABx/zMAAAAAAAMAEwARAAAAAAAAAAAAAAAAAAAAAAAAAAAAX2ltZ0J1dHRvbkJhci5naWY/
+/P86AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAQAHAAEAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAA
+AL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29yaV96ZQABAE58vv8oAAAABQAAAJ0BAAAOAAAA
+AAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUAAACdAQAADgAAAAAAAABfU2VuZCBEb2N1bWVu
+dAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0ZvcndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAA
+AAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4AAAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBG
+cm9tIEZvbGRlcgoGAD58vv8YAAAAAQAAAJ4BAAABAAAAAAAAAF8BXv8cAAAAAAACAAAAAAAAAAAA
+AAAAAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwRAAAAAQAAAAAAJQAAAAAAAAAfAM8KIQABAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29y
+aV96ZQABAE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUA
+AACdAQAADgAAAAAAAABfU2VuZCBEb2N1bWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0Zv
+cndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4A
+AAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcgAGAD58vv8YAAAAAQAAAJ4BAAAB
+AAAAAAAAAF8A
+</rawitemdata></item>
+<item name='$$ScriptName' summary='false' sign='true'><text>_pagEntranceMiddleNav</text></item>
+<item name='$Body' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAACBAAAAAJWHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAAo=
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text>GW Components API 1.0.0</text></item>
+<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
+

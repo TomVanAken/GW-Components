@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257E670046A202" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="226" sequence="11" unid="9AEFFDA66EFBC6E8C1257DA3006EF34B">
+<created><datetime>20141203T211152,43+01</datetime></created>
+<modified><datetime dst="true">20150707T103023,64+02</datetime></modified>
+<revised><datetime dst="true">20150707T103023,63+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150707T103023,64+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150617T145131,40+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tom Van Aken/OU=AXEIF/O=AGFA</name><name>CN=Demo Administrator/O=demo</name></updatedby>
+<wassignedby><name>CN=Demo Administrator/O=demo</name></wassignedby>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$TITLE" sign="true"><textlist><text>_Company Logo</text><text>companyLogo</text></textlist></item>
+<item name="$DesignerVersion" sign="true"><text>8.5.3</text></item>
+
+
+<item name="$MimeType" sign="true"><text>image/png</text></item>
+<item name="$FileModDT" sign="true"><datetime>20141128T104052,28+01</datetime></item>
+<item name="$Flags"><text>34CiQ</text></item>
+<item name="$ImageNames" sign="true"><text>gwLogo.png</text></item>
+<item name="$Comment"><text>GW Components API 1.0.0</text></item></note>
