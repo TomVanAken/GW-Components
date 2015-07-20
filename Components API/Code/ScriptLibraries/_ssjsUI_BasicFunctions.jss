@@ -75,3 +75,18 @@ function submittedInPanel(panelId) {
 	}
 	return false;
 }
+
+/***
+ * Checks if given component is marked as required
+ */
+function isRequiredField(fieldName) {
+	var bRequired = false;
+	try{
+		var component = getComponent(fieldName);
+		if(component==null) return false;
+		if(!(component instanceof javax.faces.component.UIInput)) return false;
+
+		if(component.isRequired()) bRequired = true;
+    }catch(e){xspOpenLog.logException(e, fieldComponent)}
+    return bRequired;
+}
